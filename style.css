@@ -1,4 +1,15 @@
-/* ================= RESET ================= */
+/* ================= GLOBAL ================= */
+:root {
+  --navy-dark: #021233;
+  --navy-main: #041b4d;
+  --navy-soft: #1f2f4a;
+  --navy-card: #0a1f4f;
+  --blue: #0b6cff;
+  --blue-soft: #00c2ff;
+  --text-light: rgba(255,255,255,0.85);
+  --text-muted: rgba(255,255,255,0.65);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +17,21 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   background: #ffffff;
   color: #0a0f1c;
 }
 
-/* ================= CONTAINER ================= */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
 /* ================= HEADER ================= */
 .site-header {
-  background: #021233;
-  padding: 20px 0;
+  background: var(--navy-dark);
+  padding: 18px 0;
 }
 
 .header-inner {
@@ -31,43 +41,46 @@ body {
 }
 
 .site-header img {
-  width: 180px;
+  width: 200px;
 }
 
 .site-nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 25px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
 }
 
 /* ================= HERO ================= */
 .hero {
-  background: #041b4d;
+  background: linear-gradient(135deg, #021233, #041b4d);
   color: white;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 60px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .hero p {
   max-width: 600px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 25px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
+  display: inline-block;
 }
 
 .btn-primary {
-  background: #0b6cff;
+  background: var(--blue);
   color: white;
 }
 
@@ -79,102 +92,115 @@ body {
 
 /* ================= COURSES ================= */
 .section {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .section-light {
-  background: #f5f7fb;
+  background: #f4f7fc;
 }
 
 .section h2 {
-  font-size: 36px;
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
 .course-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
 .course-card {
-  background: #021233;
-  color: white;
-  border-radius: 12px;
+  background: var(--navy-card);
+  border-radius: 18px;
   overflow: hidden;
+  color: white;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
 }
 
 .course-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
 .course-card-content {
-  padding: 15px;
+  padding: 20px;
 }
 
 .course-card h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .course-card p {
   font-size: 14px;
+  color: var(--text-muted);
 }
 
 /* ================= BUILD SYSTEM ================= */
 .section-dark {
-  background: #021233;
+  background: var(--navy-dark);
   color: white;
 }
 
 .system-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
 .system-card {
-  background: #0c1b3d;
-  padding: 20px;
-  border-radius: 12px;
+  background: var(--navy-card);
+  padding: 25px;
+  border-radius: 16px;
 }
 
 /* ================= PROOF CARDS ================= */
 .footer-proof {
-  background: #1f2f4a;
-  padding: 80px 0 40px;
+  background: linear-gradient(180deg, #18263f, #1f2f4a);
+  padding: 100px 0 60px;
 }
 
 .proof-grid {
   display: grid;
-  gap: 25px;
+  gap: 30px;
 }
 
 .proof-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0c1b3d;
-  border-radius: 16px;
-  padding: 25px;
+  background: linear-gradient(135deg, #07183e, #0a1f4f);
+  border-radius: 18px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.25s;
+}
+
+.proof-card:hover {
+  transform: translateY(-3px);
 }
 
 .proof-left {
   display: flex;
+  gap: 18px;
   align-items: center;
-  gap: 15px;
 }
 
 .proof-left img {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
 .proof-left h3 {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .proof-left p {
@@ -183,50 +209,50 @@ body {
 }
 
 .proof-tag {
-  color: #0b6cff;
-  font-weight: bold;
-  font-size: 14px;
+  color: var(--blue);
+  font-weight: 700;
 }
 
 .proof-left small {
-  color: #cbd6ee;
   display: block;
-  margin-top: 5px;
+  color: #b8c5e0;
+  margin-top: 4px;
 }
 
 .proof-badge {
-  padding: 8px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 12px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .verified {
-  border: 1px solid #0b6cff;
-  color: #0b6cff;
+  border: 1px solid var(--blue);
+  color: var(--blue);
 }
 
 .endorsed {
-  border: 1px solid #00c2ff;
-  color: #00c2ff;
+  border: 1px solid var(--blue-soft);
+  color: var(--blue-soft);
 }
 
 /* ================= FOOTER ================= */
 .site-footer {
-  background: #1f2f4a;
-  padding: 80px 0 30px;
-  color: white;
+  background: var(--navy-soft);
+  padding: 100px 0 40px;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
+  gap: 60px;
 }
 
 .footer-column h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 30px;
 }
 
 .footer-column ul {
@@ -234,12 +260,13 @@ body {
 }
 
 .footer-column li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .footer-column a {
-  color: #cbd6ee;
-  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  transition: 0.2s;
 }
 
 .footer-column a:hover {
@@ -247,13 +274,14 @@ body {
 }
 
 .footer-bottom-row {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #aab5d1;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.5);
 }
 
 /* ================= MOBILE ================= */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .course-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -267,14 +295,20 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
   .course-grid,
   .system-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 32px;
+  .proof-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
   }
 }
