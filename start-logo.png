@@ -1,0 +1,5 @@
+start-frontend/
+  index.html
+  style.css
+  assets/
+    start-logo.png
