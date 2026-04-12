@@ -299,18 +299,21 @@ a {
 .courses-section {
   background: linear-gradient(180deg, #f1f5ff 0%, #edf2ff 100%);
   padding: 72px 0 82px;
+  overflow: hidden;
 }
 
 .courses-layout {
   display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 36px;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 40px;
   align-items: start;
 }
 
-.courses-heading h2,
-.why-start-panel h2,
-.proof-left h2 {
+.courses-heading {
+  margin-bottom: 24px;
+}
+
+.courses-heading h2 {
   margin: 0;
   font-size: clamp(36px, 4vw, 58px);
   line-height: 1.02;
@@ -319,13 +322,16 @@ a {
 }
 
 .courses-stagger {
-  position: relative;
-  min-height: 760px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 24px;
+  align-items: start;
+  max-width: 900px;
 }
 
 .course-card {
-  position: absolute;
-  width: 230px;
+  position: relative;
+  width: 100%;
   background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
   border: 1px solid rgba(4, 27, 77, 0.08);
   border-radius: 22px;
@@ -363,11 +369,15 @@ a {
   font-weight: 700;
 }
 
-.offset-1 { top: 70px; left: 0; }
-.offset-2 { top: 90px; left: 250px; }
-.offset-3 { top: 25px; left: 500px; }
-.offset-4 { top: 330px; left: 450px; }
-.offset-5 { top: 255px; left: 710px; }
+/* controlled stagger */
+.offset-1 { transform: translateY(36px); }
+.offset-2 { transform: translateY(78px); }
+.offset-3 { transform: translateY(0); }
+.offset-4 { transform: translateY(-18px); }
+.offset-5 {
+  transform: translateY(-92px);
+  grid-column: 3;
+}
 
 .why-start-panel {
   display: flex;
