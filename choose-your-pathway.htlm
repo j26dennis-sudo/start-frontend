@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Pathway | START Online Business Academy</title>
+  <meta
+    name="description"
+    content="Choose how you want to move forward with START Online Business Academy. Learn the business model with Master Path or build the business with Founder Path and the START Build System™."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="choose-your-pathway.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="START home">
+        <img src="assets/start-logo.png" alt="START Online Business Academy logo" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="build-system.html">Build System™</a>
+        <a href="directory.html">Directory</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-nav-secondary">Log In</a>
+        <a href="courses.html" class="btn btn-nav-primary">Explore Courses</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy animate-on-load">
+          <p class="eyebrow">START Online Business Academy</p>
+          <h1>Choose Your Pathway</h1>
+          <p class="hero-text">
+            START gives you two ways to move forward. You can start by learning the business model, or choose the pathway designed to help you build a real business with more structure, more direction, and more momentum.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#pathways" class="btn btn-primary">Choose Your Path</a>
+            <a href="courses.html" class="btn btn-secondary">Explore Courses</a>
+          </div>
+
+          <div class="hero-pills">
+            <div class="hero-pill">
+              <strong>Master Path</strong>
+              <span>Learn only</span>
+            </div>
+            <div class="hero-pill featured-pill">
+              <strong>Founder Path</strong>
+              <span>Learn + build</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual animate-on-load delay-2">
+          <div class="hero-image-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1522202222206-b75030775b8d?auto=format&fit=crop&w=1400&q=80"
+              alt="Entrepreneurs building a business"
+              class="hero-image"
+            />
+            <div class="hero-overlay-card float-card">
+              <strong>START Build System™</strong>
+              <span>Learn, Build, Verify, Fund</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider-line"></section>
+
+    <section class="intro-section fade-up">
+      <div class="container intro-grid">
+        <div class="intro-copy fade-left">
+          <p class="section-label">WHY THIS PAGE MATTERS</p>
+          <h2>This is not just a course decision</h2>
+          <p>
+            This page exists to help you decide how you want to move through START. Some people want to learn first without pressure. Others are ready to start building with more intention. Both paths are valuable, but they are not the same.
+          </p>
+        </div>
+
+        <div class="intro-card fade-right">
+          <strong>Simple rule:</strong>
+          <span>
+            If you want to understand the business first, choose Master Path. If you want structure to help you build, choose Founder Path.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider-line"></section>
+
+    <section class="pathways-section fade-up" id="pathways">
+      <div class="container">
+        <div class="section-heading centered fade-up">
+          <p class="section-label">TWO WAYS TO MOVE FORWARD</p>
+          <h2>One path helps you learn. One path helps you build.</h2>
+          <p>
+            The difference is not just what you get. The difference is how you move.
+          </p>
+        </div>
+
+        <div class="pathways-grid">
+          <article class="path-card master-card fade-up stagger-1">
+            <div class="path-card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80"
+                alt="Person learning on a laptop"
+                class="path-card-image"
+              />
+            </div>
+
+            <div class="path-card-body">
+              <p class="path-kicker">MASTER PATH</p>
+              <h3>Learn the business model</h3>
+              <p class="path-description">
+                Master Path is for people who want to understand the industry, the offer, and how the business works before worrying about execution. This path is focused on learning, clarity, and business understanding.
+              </p>
+
+              <div class="path-list">
+                <div class="path-item">Course access</div>
+                <div class="path-item">Business knowledge</div>
+                <div class="path-item">Self-paced learning</div>
+                <div class="path-item">Understand how the model works</div>
+                <div class="path-item muted-item">No START Build System™</div>
+                <div class="path-item muted-item">No build-step requirement</div>
+              </div>
+
+              <div class="path-footer">
+                <p class="path-note">Best for people who want to learn first without execution pressure.</p>
+                <a href="courses.html" class="btn btn-light-primary">Start Learning</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="path-card founder-card fade-up stagger-2">
+            <div class="recommended-badge">Recommended</div>
+
+            <div class="path-card-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80"
+                alt="Entrepreneur building a business"
+                class="path-card-image"
+              />
+            </div>
+
+            <div class="path-card-body">
+              <p class="path-kicker founder-kicker">FOUNDER PATH</p>
+              <h3>Build with structure and direction</h3>
+              <p class="path-description">
+                Founder Path is for aspiring founders who want more than information. It includes the START Build System™ and is designed to help you move from learning into real-world business development with a clearer process.
+              </p>
+
+              <div class="path-list">
+                <div class="path-item">Course access</div>
+                <div class="path-item">START Build System™</div>
+                <div class="path-item">Step-by-step execution focus</div>
+                <div class="path-item">Build-stage structure</div>
+                <div class="path-item">Stronger path to real movement</div>
+                <div class="path-item">Designed for aspiring founders</div>
+              </div>
+
+              <div class="path-footer">
+                <p class="path-note">Best for people ready to stop guessing and start building.</p>
+                <a href="courses.html" class="btn btn-primary">Start Building</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider-line"></section>
+
+    <section class="explanation-section fade-up">
+      <div class="container">
+        <div class="section-heading centered fade-up">
+          <p class="section-label">WHAT EACH PATH REALLY MEANS</p>
+          <h2>Clear explanation of both pathways</h2>
+        </div>
+
+        <div class="explanation-grid">
+          <div class="explanation-card fade-up stagger-1">
+            <h3>What Master Path means</h3>
+            <p>
+              Master Path is not a build-focused pathway. It is for learning only. It is where someone can study the business model, understand the service, and become more informed before deciding whether they want to execute. It does not require the START Build System™ and it does not require build-stage movement.
+            </p>
+          </div>
+
+          <div class="explanation-card fade-up stagger-2">
+            <h3>What Founder Path means</h3>
+            <p>
+              Founder Path is where START becomes more than education. This pathway is built for people who want help moving into real execution. It includes the START Build System™ and creates a clearer link between learning the business and actively building it step by step.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider-line"></section>
+
+    <section class="comparison-section fade-up">
+      <div class="container">
+        <div class="section-heading centered fade-up">
+          <p class="section-label">SIDE BY SIDE COMPARISON</p>
+          <h2>See the difference clearly</h2>
+          <p>
+            Both pathways help you move forward. The difference is whether your focus is learning only or building with execution.
+          </p>
+        </div>
+
+        <div class="comparison-wrap fade-up">
+          <div class="comparison-row comparison-head">
+            <div class="comparison-cell comparison-label"></div>
+            <div class="comparison-cell comparison-plan">Master Path</div>
+            <div class="comparison-cell comparison-plan featured-plan">Founder Path</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-label">Course Access</div>
+            <div class="comparison-cell">Included</div>
+            <div class="comparison-cell featured-plan">Included</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-label">Business Knowledge</div>
+            <div class="comparison-cell">Yes</div>
+            <div class="comparison-cell featured-plan">Yes</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-label">START Build System™</div>
+            <div class="comparison-cell">No</div>
+            <div class="comparison-cell featured-plan">Yes</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-label">Execution Focus</div>
+            <div class="comparison-cell">Low</div>
+            <div class="comparison-cell featured-plan">High</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-label">Requires Build Steps</div>
+            <div class="comparison-cell">No</div>
+            <div class="comparison-cell featured-plan">Yes</div>
+          </div>
+
+          <div class="comparison-row">
+            <div class="comparison-cell comparison-label">Best For</div>
+            <div class="comparison-cell">Learning first</div>
+            <div class="comparison-cell featured-plan">Building now</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider-line"></section>
+
+    <section class="build-system-section fade-up">
+      <div class="container">
+        <div class="section-heading centered fade-up">
+          <p class="section-label">THE START BUILD SYSTEM™</p>
+          <h2>Founder Path is built around real movement</h2>
+          <p>
+            The START Build System™ ensures aspiring founders are not just taking a course, they are building a real business with a clearer path to learn, build, verify, and grow.
+          </p>
+        </div>
+
+        <div class="build-grid">
+          <div class="build-card fade-up stagger-1">
+            <div class="build-number">01</div>
+            <h3>Learn</h3>
+            <p>Understand the business model, the offer, and how the business actually works.</p>
+          </div>
+
+          <div class="build-card fade-up stagger-2">
+            <div class="build-number">02</div>
+            <h3>Build</h3>
+            <p>Set up the structure, services, systems, and foundation for real activity.</p>
+          </div>
+
+          <div class="build-card fade-up stagger-3">
+            <div class="build-number">03</div>
+            <h3>Verify</h3>
+            <p>Work toward proof through real movement, visible progress, and execution.</p>
+          </div>
+
+          <div class="build-card fade-up stagger-4">
+            <div class="build-number">04</div>
+            <h3>Fund</h3>
+            <p>Position the business for stronger credibility, growth, and future funding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider-line"></section>
+
+    <section class="examples-section fade-up">
+      <div class="container">
+        <div class="section-heading centered fade-up">
+          <p class="section-label">REAL-WORLD EXAMPLES</p>
+          <h2>What this looks like in real life</h2>
+          <p>
+            Here’s the practical difference between learning the model and building the business.
+          </p>
+        </div>
+
+        <div class="examples-grid">
+          <div class="example-card fade-up stagger-1">
+            <h3>Master Path Example</h3>
+            <p>
+              Someone interested in Credit Repair chooses Master Path because they want to understand the service, pricing, process, and industry before deciding whether they want to launch a business.
+            </p>
+          </div>
+
+          <div class="example-card fade-up stagger-2">
+            <h3>Founder Path Example</h3>
+            <p>
+              Someone interested in Credit Repair chooses Founder Path because they want to learn the model and then actively move into building their business using the START Build System™.
+            </p>
+          </div>
+
+          <div class="example-card fade-up stagger-3">
+            <h3>Another Master Path Example</h3>
+            <p>
+              Someone exploring Freight Dispatching chooses Master Path because they want business understanding first, not the pressure of setup, proof, and execution.
+            </p>
+          </div>
+
+          <div class="example-card fade-up stagger-4">
+            <h3>Another Founder Path Example</h3>
+            <p>
+              Someone ready to start a Staffing & Recruiting business
