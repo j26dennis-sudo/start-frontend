@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Your Pathway | START</title>
+  <link rel="stylesheet" href="choose-your-pathway.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <img src="assets/start-logo.png" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Choose How You Want to Build</h1>
+    <p>
+      You’re not just here to take a course.  
+      You’re here to build something real.
+    </p>
+  </div>
+</section>
+
+<!-- PATHWAYS -->
+<section class="pathways">
+
+  <div class="container grid">
+
+    <!-- MASTER -->
+    <div class="card master fade-up">
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" />
+      <h2>Master Path</h2>
+      <p>Learn the business model without pressure to execute.</p>
+
+      <ul>
+        <li>✔ Course access</li>
+        <li>✔ Business knowledge</li>
+        <li>✔ Learn at your own pace</li>
+        <li>✖ No Build System</li>
+        <li>✖ No execution requirement</li>
+      </ul>
+
+      <button class="btn secondary">Start Learning</button>
+    </div>
+
+    <!-- FOUNDER -->
+    <div class="card founder fade-up">
+      <div class="badge">Recommended</div>
+
+      <img src="https://images.unsplash.com/photo-1522202222206-b75030775b8d" />
+
+      <h2>Founder Path</h2>
+      <p>Build your business with structure using the START system.</p>
+
+      <ul>
+        <li>✔ Course access</li>
+        <li>✔ START Build System™</li>
+        <li>✔ Step-by-step execution</li>
+        <li>✔ Real business movement</li>
+      </ul>
+
+      <button class="btn primary">Start Building</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BUILD SYSTEM -->
+<section class="build fade-up">
+  <div class="container center">
+    <h2>The START Build System™</h2>
+    <p>
+      The START Build System™ ensures aspiring founders are not just taking a course, 
+      they are building a real business.
+    </p>
+
+    <div class="steps">
+      <div>Learn</div>
+      <div>Build</div>
+      <div>Verify</div>
+      <div>Fund</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="who fade-up">
+  <div class="container grid-3">
+
+    <div>
+      <h3>Beginners</h3>
+      <p>Start learning without pressure.</p>
+    </div>
+
+    <div>
+      <h3>Aspiring Founders</h3>
+      <p>Ready to build something real.</p>
+    </div>
+
+    <div>
+      <h3>Action Takers</h3>
+      <p>Want structure and direction.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta fade-up">
+  <div class="container center">
+    <h2>Start Building Your Business Today</h2>
+    <button class="btn primary">Start Building</button>
+  </div>
+</section>
+
+</main>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
+});
+document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
