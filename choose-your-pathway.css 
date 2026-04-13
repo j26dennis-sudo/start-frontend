@@ -1,0 +1,104 @@
+body {
+  font-family: Arial;
+  background: #f6f8ff;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.founder {
+  border: 2px solid #0b6cff;
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  background: gold;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.primary {
+  background: #0b6cff;
+  color: white;
+}
+
+.secondary {
+  background: #eee;
+}
+
+/* BUILD SYSTEM */
+.build {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* WHO */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 80px 0;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* ANIMATION */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: .6s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
